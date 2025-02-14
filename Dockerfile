@@ -10,6 +10,6 @@ WORKDIR /etc/prometheus
 # Expose Prometheus port
 EXPOSE 9090
 
-# Start Prometheus
-CMD ["prometheus", "--config.file=/etc/prometheus/prometheus.yml"]
+# Corrected CMD to explicitly specify the config file
+CMD ["/bin/prometheus", "--config.file=/etc/prometheus/prometheus.yml"]
 
