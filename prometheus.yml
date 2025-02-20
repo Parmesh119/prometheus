@@ -9,6 +9,6 @@ scrape_configs:
   - job_name: 'spring-boot-app'  # Scrape your Spring Boot app via ngrok
     metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: ['0009-2401-4900-8899-a77-6d96-1948-b224-eccb.ngrok-free.app'] # **REPLACE THIS WITH YOUR ACTUAL NGROK URL**
+      - targets: ['a2ae-2401-4900-8899-a77-6d96-1948-b224-eccb.ngrok-free.app'] # **REPLACE THIS WITH YOUR ACTUAL NGROK URL**
         labels:
           environment: 'development'  # Optional label
