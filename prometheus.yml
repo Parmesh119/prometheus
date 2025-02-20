@@ -38,7 +38,7 @@ scrape_configs:
   - job_name: 'spring-boot-app'  # Separate job for 8081
     metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: ['localhost:8081']
+      - targets: ['https://x8scbxnf-8081.inc1.devtunnels.ms/:8081']
   
 
 
